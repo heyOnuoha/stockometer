@@ -1,6 +1,6 @@
 # StockoMeter
 
-Track live stock prices, top gainers and losers, trading volume, and price history across thousands of tickers — all in one clean, fast dashboard. Powered by APILayer's [Marketstack API](https://marketstack.com/).
+Track live stock prices, top gainers and losers, trading volume, and price history across thousands of tickers — all in one clean, fast dashboard. Powered by APILayer's [Marketstack API](https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section).
 
 ## 🚀 Features
 
@@ -28,7 +28,7 @@ Track live stock prices, top gainers and losers, trading volume, and price histo
 
 ### Prerequisites
 1. Node.js 18+ and `npm` installed.
-2. A free API key from [Marketstack](https://marketstack.com/).
+2. A free API key from [Marketstack](https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section).
 3. A free API key from [Logo.dev](https://www.logo.dev/) (for company logos).
 
 ### Installation

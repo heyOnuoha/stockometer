@@ -11,7 +11,7 @@
  * dark gradient next to the white Marketstack mark.
  */
 
-const SIGNUP_URL = "https://marketstack.com/signup/free";
+const SIGNUP_URL = "https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section";
 const BACKDROP =
   "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop";
 

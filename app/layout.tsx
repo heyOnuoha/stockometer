@@ -62,7 +62,7 @@ export default function RootLayout({
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="https://marketstack.com"
+                href="https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-(--color-brand)"

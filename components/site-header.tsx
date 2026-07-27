@@ -204,7 +204,7 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-2">
           <TickerSearch />
           <a
-            href="https://marketstack.com"
+            href="https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden rounded-md border border-(--color-border) px-3 py-1.5 text-sm text-(--color-text) transition-colors hover:border-(--color-brand) hover:text-(--color-brand) sm:inline-block"
