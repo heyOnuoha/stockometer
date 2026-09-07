@@ -7,6 +7,7 @@ import { ErrorBanner } from "@/components/error-banner";
 import { LiveRefresh } from "@/components/live-refresh";
 import { MarketCharts } from "@/components/market-charts";
 import { MarketstackBanner } from "@/components/marketstack-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const revalidate = 65;
 
@@ -67,6 +68,8 @@ export default async function HomePage() {
           No data returned by Marketstack. Try again in a moment.
         </div>
       )}
+
+      <FaqSection />
 
       {/* Floating compact data-source banner */}
       <div className="pointer-events-none fixed bottom-4 left-1/2 z-40 w-[calc(100%-2rem)] -translate-x-1/2 px-2">
