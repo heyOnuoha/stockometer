@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { assetPath } from "@/lib/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -115,7 +116,7 @@ export function SiteHeader() {
             >
               <span>by</span>
               <Image
-                src="/apilayer-logo.png"
+                src={assetPath("/apilayer-logo.png")}
                 alt="APILayer"
                 width={72}
                 height={14}

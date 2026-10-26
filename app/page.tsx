@@ -26,6 +26,16 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-8 space-y-8">
       <div className="space-y-3">
+        {/* The page had only h2s, which leaves a crawler with no statement of
+            what this page is. */}
+        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          Live stock prices, movers and market data
+        </h1>
+        <p className="max-w-2xl text-sm text-(--color-text-muted)">
+          Track prices, top gainers and losers, trading volume, indices and
+          sector performance across thousands of tickers. Updated through the
+          trading day and free to use.
+        </p>
         <MarketsTabs />
         <div className="flex flex-wrap items-center justify-between gap-3">
           <MarketStatsBar records={records} />

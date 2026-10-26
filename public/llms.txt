@@ -1,0 +1,65 @@
+# StockoMeter - live stock prices and market data
+
+> A free dashboard for live stock prices, top gainers and losers, trading
+> volume, indices, sectors, earnings and dividends across thousands of
+> tickers. Powered by the Marketstack API from APILayer.
+
+## What it covers
+
+- **Live prices** for thousands of tickers, updated through the trading day.
+- **Movers**: top gainers and losers, by volume and by percentage change.
+- **Screener**: filter the universe by price, change, volume and sector.
+- **Indices and sectors**: performance across major indices and sector groups.
+- **History**: price history charts per ticker.
+- **Earnings and dividends** calendars.
+- **Watchlist and portfolio** tracking, kept in the browser.
+- **Embeddable widgets** for putting a ticker on another page.
+
+## Data source
+
+Marketstack (https://marketstack.com), an APILayer product, covering real-time,
+intraday and historical market data for tickers across 70+ global exchanges.
+Free tier available.
+
+## Limits
+
+- Quotes are delayed on the free data tier; this is a research and tracking
+  tool, not an execution platform.
+- Nothing here is financial advice.
+- Coverage and intraday granularity vary by exchange and by plan.
+
+## Frequently asked questions
+
+### What is StockoMeter?
+
+StockoMeter is a live stock market dashboard that lets you track stock prices, market movements, trading volume, top gainers, and other market activity. It is powered by Marketstack, a stock market data API that provides real-time, intraday, and historical market data for developers.
+
+### What is the data source for StockoMeter?
+
+StockoMeter is powered by the Marketstack API. The dashboard uses Marketstack to retrieve stock market data, including prices, daily changes, trading volume, and other market information. Developers can access the same type of market data programmatically through the Marketstack API.
+
+### Is StockoMeter showing real-time stock market data?
+
+StockoMeter provides continuously updated market information for the stocks displayed on the dashboard. Marketstack provides real-time and intraday stock market data through its API, allowing developers to retrieve up-to-date market information for supported securities and exchanges.
+
+### What is the Marketstack API?
+
+Marketstack is a REST API for accessing real-time, intraday, and historical stock market data. It provides structured JSON data for stock prices, end-of-day data, intraday quotes, tickers, exchanges, market indices, dividends, splits, and other financial information. Marketstack covers more than 170,000 stock tickers across 70+ global exchanges.
+
+### How can I use Marketstack API to get stock prices?
+
+Developers can use Marketstack API endpoints to retrieve stock prices and market data by providing stock ticker symbols and other parameters. The API supports endpoints for end-of-day and intraday data, including the latest available stock prices, OHLCV data, historical records, and trading volume.
+
+### What stock market data does Marketstack API provide?
+
+Marketstack provides a wide range of financial market data, including real-time stock prices, intraday quotes, end-of-day data, historical prices, stock tickers, exchanges, market indices, dividends, stock splits, bonds, ETF holdings, and company information. It also provides more than 30 years of historical market data on supported plans.
+
+### What can I build with the Marketstack API?
+
+Marketstack can be used to build stock market dashboards, portfolio trackers, financial applications, trading tools, investment platforms, market analytics products, and data-driven websites. Developers can combine real-time, intraday, and historical market data to create applications that monitor stock prices, analyze market trends, visualize historical performance, or track portfolios.
+
+## Links
+
+- Tool: https://apilayer.com/devtools/stockometer
+- Marketstack API: https://marketstack.com
+- APILayer: https://apilayer.com

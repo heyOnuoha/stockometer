@@ -11,6 +11,8 @@
  * dark gradient next to the white Marketstack mark.
  */
 
+import { assetPath } from "@/lib/assets";
+
 const SIGNUP_URL = "https://apilayer.com/products/marketstack/?utm_source=stockometer_devtools&utm_medium=internal&utm_campaign=featured_section";
 const BACKDROP =
   "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop";
@@ -21,13 +23,13 @@ function BrandLockup({ size }: { size: "sm" | "md" }) {
   return (
     <div className="flex items-center gap-2">
       <img
-        src="/brand/marketstack-white.svg"
+        src={assetPath("/brand/marketstack-white.svg")}
         alt="Marketstack"
         className={`${h} w-auto`}
       />
       <span className={`w-px ${divider} bg-white/25`} />
       <img
-        src="/brand/apilayer-logo.png"
+        src={assetPath("/brand/apilayer-logo.png")}
         alt="APILayer"
         className={`${h} w-auto brightness-0 invert opacity-90`}
       />

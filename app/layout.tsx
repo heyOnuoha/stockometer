@@ -1,4 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { SITE, SITE_URL } from "@/lib/site";
+import { StructuredData } from "@/components/structured-data";
+import { assetPath } from "@/lib/assets";
 import Image from "next/image";
 import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -17,9 +20,57 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StockoMeter — Live Stock Markets",
-  description:
-    "Track live stock prices, top gainers and losers, trading volume and price history across thousands of tickers — all in one clean, fast dashboard. Powered by Marketstack.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE.name} · ${SITE.tagline}`,
+    template: `%s · ${SITE.name}`,
+  },
+  description: SITE.description,
+  keywords: [
+    "live stock prices",
+    "stock market dashboard",
+    "top gainers and losers",
+    "stock screener",
+    "market indices",
+    "sector performance",
+    "stock price history",
+    "marketstack",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: SITE.name,
+    title: `${SITE.name} · ${SITE.tagline}`,
+    description: SITE.description,
+    locale: SITE.locale,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE.name} · ${SITE.tagline}`,
+    description: SITE.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  authors: [{ name: "APILayer", url: "https://apilayer.com/" }],
+  creator: "APILayer",
+};
+
+/** themeColor belongs in `viewport`; in `metadata` it is dropped from the head. */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -32,6 +83,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <StructuredData />
+      </head>
       <body className="flex min-h-full flex-col bg-(--color-bg) text-(--color-text)">
         <Suspense fallback={<div className="h-7 border-b border-(--color-border) bg-(--color-surface)" />}>
           <TickerMarquee />
@@ -50,7 +104,7 @@ export default function RootLayout({
                 aria-label="APILayer"
               >
                 <Image
-                  src="/apilayer-logo.png"
+                  src={assetPath("/apilayer-logo.png")}
                   alt="APILayer"
                   width={84}
                   height={16}
